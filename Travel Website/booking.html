@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <!-- Add your CSS file link -->
+    <link rel="stylesheet" href="booking.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+</head>
+
+<body>
+    
+    <div class="heading">
+        <h1>BOOKING</h1>
+    </div>
+    <!-- Header and other sections -->
+    <div class="block">
+        <!-- Booking form section starts -->
+        <section class="book" id="book">
+            <div class="row">
+                <div class="container">
+                    <form action="booking.php" method="post">
+                        <div class="inputBox">
+                            <h3>From</h3>
+                            <select name="from">
+                                <option value="" selected disabled>Select Departure City</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Nagpur">Tirupati</option>
+                                
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <h3>To</h3>
+                            <select name="to">
+                                <option value="" selected disabled>Select Destination City</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Nagpur">Tirupati</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <h3>Arrival Date</h3>
+                            <input type="date" name="arrival_date">
+                        </div>
+                        <div class="inputBox">
+                            <h3>Leaving Date</h3>
+                            <input type="date" name="leaving_date">
+                        </div>
+                        <input type="submit" value="Book Now" class="btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

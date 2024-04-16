@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <!-- <div class="con">
+      <h3>sign up and get started</h3>
+      <div> -->
+    <div class="wrapper">
+      <div class="title-text">
+        
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"> </div>
+        </div>
+            <div class="form-inner">
+                <form name="loginForm" class="login" method="POST" action="login.php">
+                    <div class="field">
+                        <input type="text" name="uname" placeholder="Username">
+                        <div id="usernameError" class="error"></div>
+
+                    </div>
+                    <div class="field">
+                        <input type="password" name="pwd" placeholder="Password">
+                        <div id="passwordError" class="error"></div>
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">
+                        Not a member? <a href="#">Signup</a>
+                    </div>
+                </form>
+            <form name="signupForm" class="signup" onsubmit="return validate()" method="POST" action="signup.php" >
+                <div class="field">
+                    <input type="text" name="uname" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" name="pwd" placeholder="Password">
+                </div>
+                <div class="field">
+                    <input type="password" name="cpwd" placeholder="Confirm password">
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="login.js">
+     
+    </script>
+  </body>
+</html>
