@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+
+
+.header .navbar a{
+    color:Rgb(41,165,163);
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar svg {
+    width: 30px; /* Adjust the size of the SVG icon */
+    margin-right: 10px; /* Add some spacing between the icon and the text */
+}
